@@ -131,3 +131,74 @@ p {
   color: #bef5f3;
   line-height: 1.8rem;
 }
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 10px 0 0 0;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  #wrapper {
+    width: 80%;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+  }
+
+  #wrapper h3 {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 1.5rem;
+    color: var(--color-white);
+  }
+
+  #intro {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+
+  #intro h3 {
+    line-height: 1.5rem;
+    margin: 1rem 0 0 0;
+  }
+
+  #intro p {
+    line-height: 1.6rem;
+  }
+
+  #signup .signup__btn {
+    position: static;
+    width: 100%;
+    font-size: 1rem;
+    padding: 16px 0;
+  }
+
+  #signup .price {
+    margin: 0 0 5px 0;
+  }
+
+  #signup h3 {
+    margin: 0 0 16px 0;
+  }
+
+  #whyus {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  #whyus h3 {
+    margin: 0 0 16px 0;
+  }
+
+  #whyus p {
+    line-height: 1.2rem;
+  }
+}
