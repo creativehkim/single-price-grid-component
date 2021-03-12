@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&display=swap');
+:root {
+  --color-primary-green: #3db0ad;
+  --color-secondary-green: #d9f15d;
+  --color-light-green: #4abebd;
+  --color-white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e2ecf5;
+  font-family: 'Karla', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+  margin: 0;
+}
+
+#wrapper {
+  max-width: 100%;
+  width: 800px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 45% 55%;
+  grid-template-areas:
+    'intro intro'
+    'signup whyus';
+}
+
+.container {
+  padding: 2.5rem;
+  color: var(--color-white);
+}
+
+#intro {
+  background-color: var(--color-white);
+  grid-area: intro;
+  color: #8f8f8f;
+}
+
+#intro h1 {
+  color: var(--color-primary-green);
+}
+
+#intro h3 {
+  color: var(--color-secondary-green);
+  margin-top: 30px;
+}
+
+#intro p {
+  line-height: 2rem;
+  margin-top: 1rem;
+}
+
+#signup {
+  background-color: var(--color-primary-green);
+  grid-area: signup;
+  position: relative;
+}
+
+#signup h3 {
+  margin-bottom: 1.5rem;
+}
+
+#signup p {
+  color: #bef5f3;
+  margin-bottom: 1.5rem;
+}
+
+#signup .price {
+  color: #79dfdd;
+  display: flex;
+  align-items: center;
+}
+
+#signup .price strong {
+  color: #fff;
+  font-size: 2rem;
+  margin-right: 16px;
+}
+
+#signup .signup__btn {
+  background-color: var(--color-secondary-green);
+  color: var(--color-white);
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 80%;
+  border: 0;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 3rem;
+}
+
+#whyus {
+  background-color: var(--color-light-green);
+  grid-area: whyus;
+}
+
+#whyus h3 {
+  margin-bottom: 1.5rem;
+}
+
+#whyus p {
+  color: #bef5f3;
+  line-height: 1.8rem;
+}
